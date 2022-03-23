@@ -17,7 +17,11 @@ export const Reducer = (state = initState, { type, payload }) => {
   // add the switch statement for different actions
   switch (type) {
     case PRODUCTSUCCESS:
-      return { ...state, products: payload };
+      return { ...state, products: payload, isLoading: false, isError: false };
+    case PRODUCTREQ:
+      return { ...state, isLoading: true };
+    case PRODUCTFALIURE:
+      return { ...state, isLoading: false, isError: true };
     case SORTPRODUCTS:
       return {
         ...state,
