@@ -1,4 +1,10 @@
-import { PRODUCTFALIURE, PRODUCTREQ, PRODUCTSUCCESS } from "./actionTypes";
+import {
+  PRODUCTFALIURE,
+  PRODUCTREQ,
+  PRODUCTSUCCESS,
+  SORTPRODUCTS,
+  VALUE,
+} from "./actionTypes";
 import axios from "axios";
 // action for get products request
 const getProductsReq = () => ({
@@ -33,4 +39,11 @@ export const getproductsData = () => (dispatch) => {
 
 // action object for sort  feature
 
-const sortProducts = () => ({});
+export const sortProducts = (data) => ({
+  type: SORTPRODUCTS,
+  payload: data,
+});
+export const getvalue = (data) => ({
+  type: VALUE,
+  data,
+});

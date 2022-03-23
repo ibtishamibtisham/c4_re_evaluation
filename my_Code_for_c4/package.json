@@ -44,5 +44,5 @@
   },
   "devDependencies": {
     "cypress": "^9.5.1"
-  }
+  } ,"homepage": "."
 }

@@ -1,3 +1,5 @@
 export const PRODUCTREQ = "PRODUCTREQ";
 export const PRODUCTSUCCESS = "PRODUCTSUCCESS";
 export const PRODUCTFALIURE = "PRODUCTFALIURE";
+export const SORTPRODUCTS = "SORTPRODUCTS";
+export const VALUE = "VALUE";

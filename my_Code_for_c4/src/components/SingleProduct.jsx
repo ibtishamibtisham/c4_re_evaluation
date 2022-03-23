@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
 export const SingleProductList = () => {
   // make a request to get the details
   const [show, setShow] = useState([]);
-  console.log(show);
+  // console.log(show);
 
   useEffect(() => {
     axios
